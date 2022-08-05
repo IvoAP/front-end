@@ -1,6 +1,24 @@
 import React from 'react';
 import { useState } from 'react';
-import CadastrorController from './CadastroControler';
+
+
+ class CadastrorController {
+    
+    constructor(paciente){ 
+        this.paciente = paciente
+        this.lista = []
+        
+    }
+    
+    AdiconarPaciente(){
+        
+        this.lista.push(this.paciente)
+        console.log(this.lista)
+    }
+
+    
+
+}
 
 
 
@@ -48,7 +66,10 @@ function CadastroView() {
             idade: idade,
             numero_contato: numero_contato
         }
-       console.log(paciente)
+        let Controllador = new CadastrorController(paciente)
+        Controllador.AdiconarPaciente()
+        
+
     }
 
 
