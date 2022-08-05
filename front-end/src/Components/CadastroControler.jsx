@@ -14,6 +14,8 @@ function CadastrorController(props){
         
         console.log(listaPacientes)
     }
+
+    
 }
 
 export default CadastrorController
